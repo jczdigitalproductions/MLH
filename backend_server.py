@@ -97,6 +97,19 @@ def index_page():
     return jsonify({"ok": False, "error": "Frontend HTML file not found."}), 404
 
 
+@app.get("/<path:filename>")
+def serve_asset(filename):
+    safe_exts = (".png", ".jpg", ".jpeg", ".webp", ".svg", ".gif", ".ico")
+    if not filename.lower().endswith(safe_exts):
+        return jsonify({"ok": False, "error": "File not found."}), 404
+
+    file_path = os.path.join(BASE_DIR, filename)
+    if os.path.exists(file_path) and os.path.isfile(file_path):
+        return send_file(file_path)
+
+    return jsonify({"ok": False, "error": "File not found."}), 404
+
+
 @app.get("/api/health")
 def health_check():
     try:
