@@ -1,5 +1,6 @@
 # SF Civic Lens + FalkorDB
-
+![Gemini Vision 311 dispatch](IMG_0715.jpeg)
+![Multimodal 311 intake dashboard](IMG_0716.jpeg)
 This project includes a static frontend at `sf_civic_lens_web_application.html` and a small Flask backend at `backend_server.py`.
 
 ## Start the backend
