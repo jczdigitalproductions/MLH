@@ -1,6 +1,21 @@
 # SF Civic Lens + FalkorDB
 [SF Civic Lens Website](https://mlh-pied.vercel.app/)
 
+## What it is about
+1. The Local Problem
+Official SF 311 form completion takes **4-7 minutes** per issue, causing severe underreporting of ADA ramp blocks, hazardous potholes, and trash in SOMA & Mission.
+
+2. Gemini Multimodal
+Extracts incident type, severity index, responsible agency (DPW, SFMTA, SFFD), and drafts official 311 payload in under **2 seconds** from street photos.
+
+3. FalkorDB Knowledge Graph
+Correlates tickets into graph entities: (Incident)-[:HOTSPOT_IN]->(District). Uncovers chronic infrastructure neglect clusters using Cypher graph queries.
+
+4. Community Impact
+Democratizes municipal reporting for pedestrians, wheelchair users, and transit commuters with _1-click citizen empowerment and auto-routing dispatch_.
+
+
+
 | <img src="IMG_0715.jpeg" width="250"> | <img src="IMG_0716.jpeg" width="250"> | <img src="IMG_0717.jpeg" width="250"> |
 
 This project includes a static frontend at `sf_civic_lens_web_application.html` and a small Flask backend at `backend_server.py`.
