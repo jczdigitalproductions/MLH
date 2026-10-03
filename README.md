@@ -1,4 +1,6 @@
 # SF Civic Lens + FalkorDB
+[Clickable Text](https://mlh-pied.vercel.app/)
+
 | <img src="IMG_0715.jpeg" width="250"> | <img src="IMG_0716.jpeg" width="250"> | <img src="IMG_0717.jpeg" width="250"> |
 
 This project includes a static frontend at `sf_civic_lens_web_application.html` and a small Flask backend at `backend_server.py`.
